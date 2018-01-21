@@ -9,7 +9,7 @@ import com.jos.dem.springboot.aop.exception.DemoException
 class DemoServiceImpl implements DemoService {
 
   void show(){
-    throw new DemoException('Throwing Business Exception')
+    throw new DemoException('Throwing Demo Exception')
   }
 
 }
