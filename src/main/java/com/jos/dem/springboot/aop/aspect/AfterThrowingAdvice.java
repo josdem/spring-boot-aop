@@ -16,8 +16,8 @@ public class AfterThrowingAdvice {
 
   @AfterThrowing(pointcut = "execution(* com.jos.dem.springboot.aop.service..**.*(..))", throwing = "ex")
   public void doRecoveryActions(RuntimeException ex){
-    log.info("Wrapping exception: " + exe);
-    throw new DemoException(ex.message, ex);
+    log.info("Wrapping exception: " + ex);
+    throw new DemoException(ex.getMessage(), ex);
   }
 
 }
